@@ -12,11 +12,16 @@ impl Person {
 }
 
 fn main() {
-    let person= Person {
+    let person1 = Person {
         name : String :: from("Asim"),
-        age : 38,
+        age : 25,
+    };
+
+    let person2 = Person {
+        name: String :: from("Viki"),
+        age: 51,
     };
 
 
-    println!("Hello Person, world!");
+    println!("Hello {}, world!",person1.name);
 }
